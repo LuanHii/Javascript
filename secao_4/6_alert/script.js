@@ -1,0 +1,1 @@
+alert("Isso é uma mensagem!"); //Pouco utilizada por ser invasiva.
