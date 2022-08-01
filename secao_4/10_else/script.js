@@ -1,7 +1,7 @@
-console.log("Mostrando mensagem") // Importante para debug e diversas coisas utiliando o console.
+let velocidade = 100;
 
-let idade = 19;
-let nome = "Luan";
-
-console.log(idade);
-console.log(nome);
+if (velocidade <= 90) {
+    console.log('Sem multa.')
+} else {
+    console.log('Multado')
+}

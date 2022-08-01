@@ -3,5 +3,4 @@ console.log("Mostrando mensagem") // Importante para debug e diversas coisas uti
 let idade = 19;
 let nome = "Luan";
 
-console.log(idade);
-console.log(nome);
+console.log(`Seu nome é ${nome} e você tem ${idade}`);
