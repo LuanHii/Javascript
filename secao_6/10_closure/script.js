@@ -11,3 +11,21 @@ console.log(soma1(5));
 let soma2 = lembrarSoma(5);
 
 console.log(soma1(7));
+
+function contador(i){
+    let cont = i;
+    let somarContador = function(){
+        console.log(cont);
+        cont++;
+    }
+    return somarContador;
+}
+
+let meuContador = contador(5);
+
+meuContador();
+meuContador();
+meuContador();
+
+let meuContador2 = contador(2);
+meuContador();
