@@ -20,3 +20,46 @@ if (b > 10) {
 console.log(a) // let nao mancha o escopo global
 
 
+// 2 - Arrow function
+
+const sum = function sum(a,b) {
+    return a + b
+}
+
+const arrowSum = (a,b) =>  a + b
+
+
+console.log(sum(5,5));
+console.log(arrowSum(5,5));
+
+const greeting = (name) => {
+    if (name) {
+        return "Olá " + name
+    } else {
+        return "Olá."
+    }
+}
+
+console.log(greeting("Luan"));
+console.log(greeting());
+
+const testeArrow = () => console.log("testado");
+
+const user = {
+    name: "Luan",
+    sayUserName() {
+        setTimeout(function() {
+            console.log(this)
+            console.log("Username:" + this.name);
+        },500)
+    },
+    sayUserNameArrow() {
+        setTimeout(() => {
+            console.log(thisconsole.log("Username: " + this.name))
+        },500)
+    },
+}
+
+
+user.sayUserName();
+user.sayUserNameArrow();
